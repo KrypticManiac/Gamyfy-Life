@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB07B41525E6501100B6D80A /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB07B41425E6501100B6D80A /* AddTaskViewController.swift */; };
+		EB07B41925E6543A00B6D80A /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB07B41825E6543A00B6D80A /* TaskCell.swift */; };
+		EBBE738725E7A13C00EEF19E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBE737D25E7A13C00EEF19E /* FMDatabase.m */; };
+		EBBE738825E7A13C00EEF19E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBE737F25E7A13C00EEF19E /* FMDatabasePool.m */; };
+		EBBE738925E7A13C00EEF19E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBE738425E7A13C00EEF19E /* FMResultSet.m */; };
+		EBBE738A25E7A13C00EEF19E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBE738525E7A13C00EEF19E /* FMDatabaseAdditions.m */; };
+		EBBE738B25E7A13C00EEF19E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBE738625E7A13C00EEF19E /* FMDatabaseQueue.m */; };
+		EBBE738F25E7A19100EEF19E /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE738E25E7A19100EEF19E /* Util.swift */; };
+		EBBE739325E7A3CD00EEF19E /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE739225E7A3CD00EEF19E /* TaskModel.swift */; };
+		EBBE739625E7A4AE00EEF19E /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE739525E7A4AE00EEF19E /* ModelManager.swift */; };
+		EBCCF8EB25D17BBE007DC42B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCF8EA25D17BBE007DC42B /* AppDelegate.swift */; };
+		EBCCF8ED25D17BBE007DC42B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCF8EC25D17BBE007DC42B /* SceneDelegate.swift */; };
+		EBCCF8EF25D17BBE007DC42B /* AllTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCF8EE25D17BBE007DC42B /* AllTasks.swift */; };
+		EBCCF8F225D17BBE007DC42B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCCF8F025D17BBE007DC42B /* Main.storyboard */; };
+		EBCCF8F425D17BC0007DC42B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCCF8F325D17BC0007DC42B /* Assets.xcassets */; };
+		EBCCF8F725D17BC0007DC42B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCCF8F525D17BC0007DC42B /* LaunchScreen.storyboard */; };
+		EBE5DA2026298E4A009A7424 /* GamyfyLifeDataBase.db in Resources */ = {isa = PBXBuildFile; fileRef = EBE5DA1F26298E4A009A7424 /* GamyfyLifeDataBase.db */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB07B41425E6501100B6D80A /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		EB07B41825E6543A00B6D80A /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		EBBE737B25E7A13B00EEF19E /* Gamyfy Life-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gamyfy Life-Bridging-Header.h"; sourceTree = "<group>"; };
+		EBBE737C25E7A13C00EEF19E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		EBBE737D25E7A13C00EEF19E /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		EBBE737E25E7A13C00EEF19E /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		EBBE737F25E7A13C00EEF19E /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		EBBE738025E7A13C00EEF19E /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		EBBE738125E7A13C00EEF19E /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		EBBE738225E7A13C00EEF19E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		EBBE738325E7A13C00EEF19E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		EBBE738425E7A13C00EEF19E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		EBBE738525E7A13C00EEF19E /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		EBBE738625E7A13C00EEF19E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		EBBE738E25E7A19100EEF19E /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		EBBE739225E7A3CD00EEF19E /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		EBBE739525E7A4AE00EEF19E /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		EBCCF8E725D17BBE007DC42B /* Gamyfy Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gamyfy Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCCF8EA25D17BBE007DC42B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBCCF8EC25D17BBE007DC42B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EBCCF8EE25D17BBE007DC42B /* AllTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTasks.swift; sourceTree = "<group>"; };
+		EBCCF8F125D17BBE007DC42B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBCCF8F325D17BC0007DC42B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBCCF8F625D17BC0007DC42B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBCCF8F825D17BC0007DC42B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Gamyfy Life/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
+		EBE5DA1F26298E4A009A7424 /* GamyfyLifeDataBase.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = GamyfyLifeDataBase.db; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBCCF8E425D17BBE007DC42B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBCCF8DE25D17BBE007DC42B = {
+			isa = PBXGroup;
+			children = (
+				EBCCF8E925D17BBE007DC42B /* Gamyfy Life */,
+				EBCCF8E825D17BBE007DC42B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBCCF8E825D17BBE007DC42B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBCCF8E725D17BBE007DC42B /* Gamyfy Life.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBCCF8E925D17BBE007DC42B /* Gamyfy Life */ = {
+			isa = PBXGroup;
+			children = (
+				EBCCF8FF25D17BC7007DC42B /* Helpers */,
+				EBCCF90125D17BF1007DC42B /* Supporting Files */,
+				EBCCF90225D17C08007DC42B /* Model */,
+				EBCCF90325D17C11007DC42B /* View */,
+				EBCCF90625D17C35007DC42B /* Controllers */,
+			);
+			path = "Gamyfy Life";
+			sourceTree = "<group>";
+		};
+		EBCCF8FF25D17BC7007DC42B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EBCCF90025D17BE5007DC42B /* FMDB */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EBCCF90025D17BE5007DC42B /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				EBBE738225E7A13C00EEF19E /* FMDatabase.h */,
+				EBBE737D25E7A13C00EEF19E /* FMDatabase.m */,
+				EBBE738325E7A13C00EEF19E /* FMDatabaseAdditions.h */,
+				EBBE738525E7A13C00EEF19E /* FMDatabaseAdditions.m */,
+				EBBE738025E7A13C00EEF19E /* FMDatabasePool.h */,
+				EBBE737F25E7A13C00EEF19E /* FMDatabasePool.m */,
+				EBBE738125E7A13C00EEF19E /* FMDatabaseQueue.h */,
+				EBBE738625E7A13C00EEF19E /* FMDatabaseQueue.m */,
+				EBBE737E25E7A13C00EEF19E /* FMDB.h */,
+				EBBE737C25E7A13C00EEF19E /* FMResultSet.h */,
+				EBBE738425E7A13C00EEF19E /* FMResultSet.m */,
+				EBBE737B25E7A13B00EEF19E /* Gamyfy Life-Bridging-Header.h */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		EBCCF90125D17BF1007DC42B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBCCF8EA25D17BBE007DC42B /* AppDelegate.swift */,
+				EBCCF8EC25D17BBE007DC42B /* SceneDelegate.swift */,
+				EBCCF8F325D17BC0007DC42B /* Assets.xcassets */,
+				EBCCF8F825D17BC0007DC42B /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBCCF90225D17C08007DC42B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBE5DA1F26298E4A009A7424 /* GamyfyLifeDataBase.db */,
+				EBBE738E25E7A19100EEF19E /* Util.swift */,
+				EBBE739225E7A3CD00EEF19E /* TaskModel.swift */,
+				EBBE739525E7A4AE00EEF19E /* ModelManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBCCF90325D17C11007DC42B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBCCF90525D17C1C007DC42B /* StoryBoard */,
+				EBCCF90425D17C15007DC42B /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBCCF90425D17C15007DC42B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EB07B41825E6543A00B6D80A /* TaskCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EBCCF90525D17C1C007DC42B /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				EBCCF8F025D17BBE007DC42B /* Main.storyboard */,
+				EBCCF8F525D17BC0007DC42B /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		EBCCF90625D17C35007DC42B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBCCF8EE25D17BBE007DC42B /* AllTasks.swift */,
+				EB07B41425E6501100B6D80A /* AddTaskViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBCCF8E625D17BBE007DC42B /* Gamyfy Life */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBCCF8FB25D17BC0007DC42B /* Build configuration list for PBXNativeTarget "Gamyfy Life" */;
+			buildPhases = (
+				EBCCF8E325D17BBE007DC42B /* Sources */,
+				EBCCF8E425D17BBE007DC42B /* Frameworks */,
+				EBCCF8E525D17BBE007DC42B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gamyfy Life";
+			productName = "Gamyfy Life";
+			productReference = EBCCF8E725D17BBE007DC42B /* Gamyfy Life.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBCCF8DF25D17BBE007DC42B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					EBCCF8E625D17BBE007DC42B = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+				};
+			};
+			buildConfigurationList = EBCCF8E225D17BBE007DC42B /* Build configuration list for PBXProject "Gamyfy Life" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBCCF8DE25D17BBE007DC42B;
+			productRefGroup = EBCCF8E825D17BBE007DC42B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBCCF8E625D17BBE007DC42B /* Gamyfy Life */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBCCF8E525D17BBE007DC42B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBCCF8F725D17BC0007DC42B /* LaunchScreen.storyboard in Resources */,
+				EBCCF8F425D17BC0007DC42B /* Assets.xcassets in Resources */,
+				EBCCF8F225D17BBE007DC42B /* Main.storyboard in Resources */,
+				EBE5DA2026298E4A009A7424 /* GamyfyLifeDataBase.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBCCF8E325D17BBE007DC42B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBE738F25E7A19100EEF19E /* Util.swift in Sources */,
+				EB07B41925E6543A00B6D80A /* TaskCell.swift in Sources */,
+				EBCCF8EF25D17BBE007DC42B /* AllTasks.swift in Sources */,
+				EB07B41525E6501100B6D80A /* AddTaskViewController.swift in Sources */,
+				EBBE738725E7A13C00EEF19E /* FMDatabase.m in Sources */,
+				EBBE738825E7A13C00EEF19E /* FMDatabasePool.m in Sources */,
+				EBBE739325E7A3CD00EEF19E /* TaskModel.swift in Sources */,
+				EBBE738B25E7A13C00EEF19E /* FMDatabaseQueue.m in Sources */,
+				EBBE739625E7A4AE00EEF19E /* ModelManager.swift in Sources */,
+				EBBE738A25E7A13C00EEF19E /* FMDatabaseAdditions.m in Sources */,
+				EBCCF8EB25D17BBE007DC42B /* AppDelegate.swift in Sources */,
+				EBBE738925E7A13C00EEF19E /* FMResultSet.m in Sources */,
+				EBCCF8ED25D17BBE007DC42B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EBCCF8F025D17BBE007DC42B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBCCF8F125D17BBE007DC42B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBCCF8F525D17BC0007DC42B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBCCF8F625D17BC0007DC42B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBCCF8F925D17BC0007DC42B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBCCF8FA25D17BC0007DC42B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBCCF8FC25D17BC0007DC42B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58MKTY5B27;
+				INFOPLIST_FILE = "Gamyfy Life/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamyfylife.Gamyfy-Life";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gamyfy Life/Helpers/FMDB/Gamyfy Life-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBCCF8FD25D17BC0007DC42B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58MKTY5B27;
+				INFOPLIST_FILE = "Gamyfy Life/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamyfylife.Gamyfy-Life";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gamyfy Life/Helpers/FMDB/Gamyfy Life-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBCCF8E225D17BBE007DC42B /* Build configuration list for PBXProject "Gamyfy Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBCCF8F925D17BC0007DC42B /* Debug */,
+				EBCCF8FA25D17BC0007DC42B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBCCF8FB25D17BC0007DC42B /* Build configuration list for PBXNativeTarget "Gamyfy Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBCCF8FC25D17BC0007DC42B /* Debug */,
+				EBCCF8FD25D17BC0007DC42B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBCCF8DF25D17BBE007DC42B /* Project object */;
+}
