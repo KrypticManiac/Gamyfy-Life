@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class AllTasks: UIViewController {
     
@@ -16,6 +17,23 @@ class AllTasks: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let centre = UNUserNotificationCenter.current()
+        centre.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+        }
+        let content = UNMutableNotificationContent()
+        content.title = "Hey I'm a notification!"
+        content.body = "Look at me!"
+        
+        let date = Date().addingTimeInterval(10)
+        let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second ], from: date)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+        
+        let uuidString = UUID().uuidString
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+        
+        centre.add(request) { (error) in
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

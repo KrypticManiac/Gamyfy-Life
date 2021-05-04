@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EB07B41525E6501100B6D80A /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB07B41425E6501100B6D80A /* AddTaskViewController.swift */; };
 		EB07B41925E6543A00B6D80A /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB07B41825E6543A00B6D80A /* TaskCell.swift */; };
+		EB60D3072641360D002B6DCF /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB60D3062641360D002B6DCF /* ExternalAccessory.framework */; };
 		EBBE738725E7A13C00EEF19E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBE737D25E7A13C00EEF19E /* FMDatabase.m */; };
 		EBBE738825E7A13C00EEF19E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBE737F25E7A13C00EEF19E /* FMDatabasePool.m */; };
 		EBBE738925E7A13C00EEF19E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBE738425E7A13C00EEF19E /* FMResultSet.m */; };
@@ -29,6 +30,8 @@
 /* Begin PBXFileReference section */
 		EB07B41425E6501100B6D80A /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		EB07B41825E6543A00B6D80A /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		EB60D3042641360D002B6DCF /* Gamyfy Life.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Gamyfy Life.entitlements"; sourceTree = "<group>"; };
+		EB60D3062641360D002B6DCF /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		EBBE737B25E7A13B00EEF19E /* Gamyfy Life-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gamyfy Life-Bridging-Header.h"; sourceTree = "<group>"; };
 		EBBE737C25E7A13C00EEF19E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		EBBE737D25E7A13C00EEF19E /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -60,17 +63,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB60D3072641360D002B6DCF /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB60D3052641360D002B6DCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB60D3062641360D002B6DCF /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EBCCF8DE25D17BBE007DC42B = {
 			isa = PBXGroup;
 			children = (
 				EBCCF8E925D17BBE007DC42B /* Gamyfy Life */,
 				EBCCF8E825D17BBE007DC42B /* Products */,
+				EB60D3052641360D002B6DCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +98,7 @@
 		EBCCF8E925D17BBE007DC42B /* Gamyfy Life */ = {
 			isa = PBXGroup;
 			children = (
+				EB60D3042641360D002B6DCF /* Gamyfy Life.entitlements */,
 				EBCCF8FF25D17BC7007DC42B /* Helpers */,
 				EBCCF90125D17BF1007DC42B /* Supporting Files */,
 				EBCCF90225D17C08007DC42B /* Model */,
@@ -410,6 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Gamyfy Life/Gamyfy Life.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58MKTY5B27;
 				INFOPLIST_FILE = "Gamyfy Life/Supporting Files/Info.plist";
@@ -432,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Gamyfy Life/Gamyfy Life.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58MKTY5B27;
 				INFOPLIST_FILE = "Gamyfy Life/Supporting Files/Info.plist";
